@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>The Donald for President</title>
+
+    <meta name="description" content="The Donald">
+
+    <meta name="referrer" content="always">
+
+    <meta property="fb:app_id" content="244304076145291">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://datadoge.com">
+    <meta property="og:description" content="Datadoge">
+    <meta property="og:title" content="Datadoge">
+    <meta property="og:image" content="http://datadoge.com/pics/datadoge.jpg">
+    <meta property="og:site_name" content="Datadoge">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <style>
+     html {
+       width: 100%;
+       height: 100%;
+     }
+     body {
+       width: 100%;
+       height: 100%;
+       background: url(pics/datadoge.jpg) no-repeat center center fixed;
+       -webkit-background-size: contain;
+       -moz-background-size: contain;
+       -o-background-size: contain;
+       background-size: contain;
+     }
+     .text-holder.jumbotron {
+       display: flex;
+       justify-content: center; /* align horizontal */
+       align-items: center; /* align vertical */
+       margin: auto;
+       background: transparent;
+       text-align: center;
+       height: 100%;
+       width: 100%;
+       line-height: 100%;
+     }
+     .text-holder > h1.datadoge {
+       text-align: center;
+       color: white;
+       width: 100%;
+       text-shadow:
+       -1px -1px 0 #000,
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+       1px 1px 0 #000;
+     }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PMTFHW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PMTFHW');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Facebook SDK -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '244304076145291',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v3.0'
+        });
+
+        FB.AppEvents.logPageView();
+
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- End Facebook SDK -->
+
+    <a href="https://www.datadoghq.com">
+      <!-- this is just to make the link cover the full page -->
+      <div class='text-holder container jumbotron'></div>
+    </a>
+
+  </body>
+</html>
